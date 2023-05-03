@@ -1,0 +1,33 @@
+{% extends "layout.html"%}
+
+{% block content%}
+
+<table class="table table-light">
+
+    <tr>
+  
+      <th>Información general</th>
+  
+      <th>Latitud</th>
+  
+      <th>Longitud</th>
+  
+    </tr>
+  
+    <tr>
+  
+      <td>{{address}}</td>
+  
+      <td>{{lat}}</td>
+  
+      <td>{{long}}</td>
+  
+    </tr>
+  
+  </table>
+
+  <br/>
+
+  <a href="/search" class="btn btn-primary">Buscar de nuevo</a>
+
+{%endblock%}
